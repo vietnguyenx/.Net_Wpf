@@ -1,0 +1,61 @@
+﻿<Window x:Class="NguyenXuanVietWPF.CustomerPopUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NguyenXuanVietWPF"
+        mc:Ignorable="d"
+        Title="CustomerPopUp" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- CustomerFullName -->
+            <Label Grid.Row="0" Grid.Column="0" Content="Customer FullName" VerticalAlignment="Center" FontWeight="Bold"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="5.5" Height="25" Name="tbCustomerFullName"/>
+
+            <!-- Telephone -->
+            <Label Grid.Row="1" Grid.Column="0" Content="Telephone" VerticalAlignment="Center" FontWeight="Bold"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="5.5" Height="25" Name="tbTelephone"/>
+
+            <!-- EmailAddress -->
+            <Label Grid.Row="2" Grid.Column="0" Content="Email Address" VerticalAlignment="Center" FontWeight="Bold"/>
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="5.5" Height="25" Name="tbEmailAddress"/>
+
+            <!-- CustomerBirthday -->
+            <Label Grid.Row="3" Grid.Column="0" Content="Customer Birthday" VerticalAlignment="Center" FontWeight="Bold"/>
+            <DatePicker Grid.Row="3" Grid.Column="1" Margin="5.5" Height="25" Name="dpCustomerBirthday"/>
+
+            <!-- CustomerStatus -->
+            <Label Grid.Row="4" Grid.Column="0" Content="Customer Status" VerticalAlignment="Center" FontWeight="Bold"/>
+            <TextBox Grid.Row="4" Grid.Column="1" Margin="5.5" Height="25" Name="tbCustomerStatus"/>
+
+            <!-- Password -->
+            <Label Grid.Row="5" Grid.Column="0" Content="Password" VerticalAlignment="Center" FontWeight="Bold"/>
+            <TextBox Grid.Row="5" Grid.Column="1" Margin="5.5" Height="25" Name="tbPassword"/>
+        </Grid>
+        <StackPanel Grid.Row="2" Margin="5, 10"
+                Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Add" Width="100" Padding="5" Name="btnAdd"
+                FontWeight="Bold" Margin="10, 0" Click="AddBtn_Clicked"/>
+            <Button Content="Cancel" Width="100" Name="btnCancel"
+                FontWeight="Bold" Margin="10, 0" Click="CancelBtn_Clicked"/>
+        </StackPanel>
+    </Grid>
+</Window>

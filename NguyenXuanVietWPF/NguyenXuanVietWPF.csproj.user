@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="BookingPopUp.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CustomerPopUp.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RoomPopUp.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowBooking.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowCustomer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowLogin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowProfile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowRoom.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="BookingPopUp.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CustomerPopUp.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RoomPopUp.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowBooking.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowCustomer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowLogin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowProfile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowRoom.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
